@@ -66,6 +66,7 @@ const authSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(refreshUserThunk.fulfilled, (state, action) => {
+        state.profile = action.payload;
         state.isLoggedIn = true;
         state.isLoading = false;
       })

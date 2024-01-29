@@ -9,13 +9,14 @@ export const UserMenu = () => {
   
   
   
+  
     function handleLogout() {
     dispatch(logoutThunk())
   }
  
   return (<>
     <div>    
-      <p>{ profile.name}</p>
+      <p>{ profile?.name}</p>
   <button onClick={handleLogout}>Logout</button>
 
     </div>

@@ -17,7 +17,7 @@ import {
 const authPersistConfig = {
   key: 'auth',
   storage,
-  whitelist: ['token', 'profile'],
+  whitelist: ['token'],
 };
 
 export const store = configureStore({
