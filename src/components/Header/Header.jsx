@@ -1,4 +1,4 @@
-import { Link, Navigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
 import { UserMenu } from "components/UserMenu/UserMenu"
 export const Header = () => {
