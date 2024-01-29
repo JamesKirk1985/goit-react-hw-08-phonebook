@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import css from './LoginForm.module.css'
-import { loginThunk, refreshUserThunk } from '../../redux/auth/authOperations';
+import { loginThunk } from '../../redux/auth/authOperations';
 export const LoginForm = () => {
   const dispatch = useDispatch();
 
@@ -12,7 +12,7 @@ export const LoginForm = () => {
       password: evt.target.elements.password.value
     }
       dispatch(loginThunk(userLoginObj))  
-    // evt.target.reset()
+    evt.target.reset()
   }
 
     return (
