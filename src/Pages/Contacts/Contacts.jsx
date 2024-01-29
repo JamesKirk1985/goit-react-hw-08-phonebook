@@ -10,7 +10,7 @@ export const Contacts = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchContacts(token))
-    }, [dispatch])
+    }, [dispatch, token])
     
     return (
         <>
